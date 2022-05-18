@@ -1,0 +1,11 @@
+###
+POST http://localhost:3003/classes
+
+Content-Type: application/json
+{
+    "name": "Turma do Galão",
+    "module": 13
+}
+
+###
+GET http://localhost:3003/classes
