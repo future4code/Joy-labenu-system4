@@ -33,7 +33,7 @@ export class Teachers {
   public getId() {
     this.id;
   }
-  public getteacherName() {
+  public getTeacherName() {
     this.teacherName;
   }
   public getEmail() {
