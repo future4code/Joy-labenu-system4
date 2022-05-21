@@ -3,7 +3,7 @@ import { connection } from "../data/connection";
 import { Teachers } from "../classes/teacher"
 import { v4 as uuidv4 } from "uuid";
 
-export async function createTeachers(req: Request, res: Response): Promise<void> {
+export async function setClass(req: Request, res: Response): Promise<void> {
   try {
     const teacherId: string = uuidv4();
     const { name, email, birth_date, classId, specialities } = req.body;

@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from "uuid";
 export async function createStudents(req: Request, res: Response): Promise<void> {
   try {
     const studentId: string = uuidv4();
-    const { studentName, email, birthDate, classId, hobbies } = req.body;
+    const { name, email, birth_date, classId, hobbies } = req.body;
 
-    const newStudent = new Students (studentId, studentName, email, birthDate, classId, hobbies);
+    const newStudent = new Students (studentId, name, email, birth_date, classId, hobbies);
 
     await connection("student").insert({
       id: newStudent.getId(),

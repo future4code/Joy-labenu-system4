@@ -8,42 +8,42 @@ enum Specialities {
 
 export class Teachers {
   private id: string;
-  private teacherName: string;
+  private name: string;
   private email: string;
-  private birthDate: Date;
+  private birth_date: string;
   private classId: string;
   private specialities: Specialities;
 
   constructor(
     id: string,
-    teacherName: string,
+    name: string,
     email: string,
-    birthDate: Date,
+    birth_date: string,
     classId: string,
     specialities: Specialities
   ) {
     this.classId = classId;
     this.id = id;
-    this.teacherName = teacherName;
+    this.name = name;
     this.email = email;
-    this.birthDate = birthDate;
+    this.birth_date = birth_date;
     this.specialities = specialities;
   }
 
   public getId() {
-    this.id;
+    return this.id;
   }
   public getTeacherName() {
-    this.teacherName;
+    return this.name;
   }
   public getEmail() {
-    this.email;
+    return this.email;
   }
   public getBirthDate() {
-    this.birthDate;
+    return this.birth_date;
   }
   public getclassId() {
-    this.classId;
+    return this.classId;
   }
   public setSpecialities(newSpeciality: Specialities) {
     this.specialities = newSpeciality;
