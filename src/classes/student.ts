@@ -1,41 +1,41 @@
 export class Students {
   private id: string;
-  private studentName: string;
+  private name: string;
   private email: string;
-  private birthDate: Date;
+  private birth_date: string;
   private classId: string;
   private hobbies: string;
 
   constructor(
     id: string,
-    studentName: string,
+    name: string,
     email: string,
-    birthDate: Date,
+    birth_date: string,
     classId: string,
     hobbies: string
   ) {
     this.classId = classId;
     this.id = id;
-    this.studentName = studentName;
+    this.name = name;
     this.email = email;
-    this.birthDate = birthDate;
+    this.birth_date = birth_date;
     this.hobbies = hobbies;
   }
 
   public getId() {
-    this.id;
+    return this.id;
   }
   public getStudentName() {
-    this.studentName;
+    return this.name;
   }
   public getEmail() {
-    this.email;
+    return this.email;
   }
   public getBirthDate() {
-    this.birthDate;
+    return this.birth_date;
   }
   public getclassId() {
-    this.classId;
+    return this.classId;
   }
 
   public setHobbies(newHobbies: string) {
