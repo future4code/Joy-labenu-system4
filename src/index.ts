@@ -15,4 +15,4 @@ app.get("/classes", getClass);
 app.get("/students", getStudents);
 app.get("/teachers", getTeachers);
 
-app.put("/change-module", setModule);
+app.put("/change-module/:id", setModule)
