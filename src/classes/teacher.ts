@@ -45,6 +45,11 @@ export class Teachers {
   public getclassId() {
     return this.classId;
   }
+
+  public setClassTeachers(newClassId : string) {
+    return this.classId = newClassId;
+  }
+
   public setSpecialities(newSpeciality: Specialities) {
     this.specialities = newSpeciality;
   }

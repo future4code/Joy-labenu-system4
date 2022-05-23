@@ -38,6 +38,10 @@ export class Students {
     return this.classId;
   }
 
+  public setClassId(newClassId: string){
+    this.classId = newClassId
+  }
+
   public setHobbies(newHobbies: string) {
     this.hobbies = newHobbies;
   }

@@ -13,10 +13,10 @@ export async function createClass(req: Request, res: Response): Promise<void> {
     await connection("class").insert({
 
       id: newClass.getId(),
-      name: newClass.getClassName(),
-      module: newClass.getModule()
+      name: newClass.getClassName()
+
     });
-    
+
     res.status(201).send({ message: "Turmitcha criada com sucesso! " });
   } catch (error: any) {
     res.status(400).send(error.message);
