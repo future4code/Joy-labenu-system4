@@ -6,8 +6,11 @@ import { v4 as uuidv4 } from "uuid";
 export async function createTeachers(req: Request, res: Response): Promise<void> {
   try {
     const teacherId: string = uuidv4();
-    const { name, email, birth_date, classId, specialities } = req.body;
-
+    const { name, email, classId, specialities } = req.body;
+    const birth_date = req.body.birth_date
+    // .split("/")
+    // .reverse()
+    // .join("-");
     const newTeacher = new Teachers (teacherId, name, email, birth_date, classId, specialities);
 
     await connection("teacher").insert({
@@ -15,7 +18,7 @@ export async function createTeachers(req: Request, res: Response): Promise<void>
       id: newTeacher.getId(),
       name: newTeacher.getTeacherName(),
       email: newTeacher.getEmail(),
-      birth_date: newTeacher.getBirthDate(),
+      birth_date: newTeacher.getBirthDate().split("/").reverse().join("-"),
       class_id: newTeacher.getclassId()
     });
     

@@ -14,7 +14,7 @@ export async function createStudents(req: Request, res: Response): Promise<void>
       id: newStudent.getId(),
       name: newStudent.getStudentName(),
       email: newStudent.getEmail(),
-      birth_date: newStudent.getBirthDate(),
+      birth_date: newStudent.getBirthDate().split("/").reverse().join("-"),
       class_id: newStudent.getclassId()
     });
     
