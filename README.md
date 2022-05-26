@@ -31,3 +31,12 @@ As funcionalidades básicas são:
 → Adicionar docente na turma;
 
 → Pegar a idade de algum estudante a partir do id
+
+## Documentação API - LabenuSystem
+https://documenter.getpostman.com/view/18693913/UyxojQf9
+
+
+## Colaboradores do projeto:
+* [Adriano Becco Nunes](https://github.com/adrianobnunes)
+* [João Lucas](https://github.com/jaolucas7)
+* [Lucas Txai](https://github.com/ltxai)
